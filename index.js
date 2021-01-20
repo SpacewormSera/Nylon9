@@ -9,12 +9,18 @@ let mainWindow;
 let addWindow;
 
 app.on('ready', () => {
-  mainWindow = new BrowserWindow({});
+  mainWindow = new BrowserWindow({
+    width: 1024,
+    height: 800,
+    minWidth: 1024,
+    minHeight: 800,
+  });
 
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'mainWindow.html'),
     protocol: 'file:',
     slashes: true,
+
   }));
   // Build menu from template
   const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
@@ -25,7 +31,7 @@ app.on('ready', () => {
 // Handle create add window
 function createAddWindow() {
   addWindow = new BrowserWindow({
-    width: 200,
+    width: 300,
     height: 300,
     title: 'add smthn',
   });
