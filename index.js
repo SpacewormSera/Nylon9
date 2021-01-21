@@ -1,7 +1,8 @@
-// lol
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
+
+require('electron-reload')(__dirname);
 
 const { app, BrowserWindow, Menu } = electron;
 
@@ -10,9 +11,9 @@ let addWindow;
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    width: 1024,
+    width: 1080,
     height: 800,
-    minWidth: 1024,
+    minWidth: 1080,
     minHeight: 800,
   });
 
