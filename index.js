@@ -12,7 +12,7 @@ let addWindow;
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 1080,
-    height: 800,
+    height: 840,
     minWidth: 1080,
     minHeight: 800,
   });

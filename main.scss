@@ -1,52 +1,46 @@
 .container {
   display: grid;
-  min-width: 0;
-  min-height: 0;
+  grid-template-rows: 1fr 2fr 1fr;
   border: 1px solid;
-  gap: 16px;
-  color: rgb(31, 190, 169);
+  gap: 20px;
+  color: gray;
 }
 
 .containerCenter {
   display: grid;
-  min-width: 0;
-  min-height: 0;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
 }
 
 .viewport {
   display: grid;
   width: 600px;
   height: 300px;
-  justify-content: center;
 }
 
 .header {
-  display: flex;
+  display: grid;
   height: 100px;
-  border: 1px solid;
+  border: 1px solid ;
   color: black;
-  justify-content: center;
 }
 
 .presets{
   display: grid;
-  min-width: 0;
-  height: 450px;
+  min-width: 250px;
+  height: 400px;
   border: 1px solid ;
   color: black;
-  justify-content: center;
 }
 
 .console{
   display: grid;
-  min-width: 0;
-  height: 450px;
+  min-width: 250px;
+  height: 400px;
   border: 1px solid ;
   color: black;
-  justify-content: center;
 }
 
 .sequencer{
@@ -54,5 +48,12 @@
   height: 200px;
   border: 1px solid ;
   color: black;
-  justify-content: center;
+}
+
+.main{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: burlywood;
 }
