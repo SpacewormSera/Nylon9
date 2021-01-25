@@ -7,6 +7,13 @@
   color: rgb(31, 190, 169);
 }
 
+.bg{
+  background:   linear-gradient(30deg,
+   rgb(255, 238, 162)0%,
+   rgb(196, 250, 255) 52%, 
+   rgb(255, 168, 190) 100%);
+}
+
 .containerCenter {
   display: grid;
   min-width: 0;
