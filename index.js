@@ -27,6 +27,8 @@ app.on('ready', () => {
   const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
   // Insert menu
   Menu.setApplicationMenu(mainMenu);
+
+  document.createElement('button');
 });
 
 // Handle create add window
@@ -60,7 +62,7 @@ const mainMenuTemplate = [
       },
       {
         label: 'Quit',
-        accelerator: process.platform == 'darwin' ? 'Command+Q'
+        accelerator: process.platform === 'darwin' ? 'Command+Q'
           : 'Ctrl+Q',
         click() {
           app.quit();

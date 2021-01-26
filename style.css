@@ -58,8 +58,30 @@
 
 .sequencer{
   display: grid;
-  height: 200px;
-  border: 1px solid ;
+  height: 160px;
+  border: 1px solid;
   color: black;
-  justify-content: center;
 }
+
+.sequencerBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  height: 30px;
+  border: 1px solid black;
+  color: black;
+}
+
+.button{
+  background-color: rgb(42, 133, 102);
+  border: 1px solid rgb(28, 80, 48);
+  color: antiquewhite;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  width: 100px;
+  height: 30px;
+}
+
+.button:hover {background-color: #62a187}
